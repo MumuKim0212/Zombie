@@ -105,5 +105,12 @@ public class PlayerHealth : LivingEntity
                 playerAudioPlayer.PlayOneShot(itemPickupClip);
             }
         }
+
+        if (other.tag == "DeadZone")
+        {
+            Die();
+        }
     }
+
+
 }
